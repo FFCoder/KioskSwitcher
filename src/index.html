@@ -7,23 +7,28 @@
   </head>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap&text=PleaseMakeASelection">
+  <link rel="stylesheet" href="./css/bttn.min.css">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+      
       background: navy;
-      height: 100vh;
-      width: 100vw;
+    }
+    h2 {
+      font-family: 'Roboto', sans-serif;
     }
     .container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 95%;
-      margin: 5%;
+      width: 90vw;
+      padding: 5%;
       background: white;
+      margin: 1rem;
+      -webkit-box-shadow: 0px 10px 13px -7px #444444, 18px 5px 15px 5px rgba(213,213,213,0); 
+      box-shadow: 0px 10px 13px -7px #444444, 18px 5px 15px 5px rgba(213,213,213,0);
     }
     .row {
-      width: 100%;
+      width: 70%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -32,13 +37,22 @@
     #GSCS_LOGO {
       width: 20%;
     }
-    .btn {
-      width: 15%;
-      height: 10vh
-    }
     .vt {
-      background: #6b3b78;
-      color: white;
+      background: #6b3b78 !important;
+      color: white !important;
+    }
+    .pc {
+      background: oldlace !important;
+      color: black !important;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2%;
+      margin: 1%;
+      height: 5rem;
+      width: 20%;
     }
   </style>
   <body>
@@ -50,8 +64,8 @@
         <h2>Please Make A Selection</h2>
       </div>
       <div class="row">
-        <div class="btn vt" id="vtLaunch">Open Veritime</div>
-        <button class="btn" id="papercutLaunch">Open Papercut</button>
+        <div class="bttn-fill bttn-lg bttn-block btn vt" id="vtLaunch">Open Veritime</div>
+        <div class="bttn-fill bttn-lg bttn-block btn pc" id="papercutLaunch">Open Papercut</div>
       </div>
     </div>
     

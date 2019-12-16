@@ -20,7 +20,8 @@ if (!DEBUG) {
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    fullscreen: true,
+    width: 1024,
+    height: 768,
     webPreferences: {
       nodeIntegration: true
     }
