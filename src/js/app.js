@@ -1,6 +1,8 @@
 const { remote } = require('electron')
 const { powerMonitor, BrowserWindow, app } = remote;
 const child = require('child_process');
+const path = require('path');
+
 
 
 const WINDOW_STATE = {
@@ -15,7 +17,8 @@ const VERITIME_URL = "https://veritime.aesoponline.com/Clock?Org=10717&KID=1593"
 var MAX_IDLE_TIME = 6;
 const VERITIME_BUTTON = document.getElementById('vtLaunch');
 const PAPERCUT_BUTTON = document.getElementById('papercutLaunch');
-const PAPERCUT_CWD = "C:\\Users\\admin.jonathon\\Downloads\\Papercut\\PCRelease"
+//const PAPERCUT_CWD = path.join(path.dirname(__dirname), "PCRelease");
+const PAPERCUT_CWD = path.join(`\\\\papercut\\`, 'PCRelease')
 
 let win;
 var WIN_MODE = null;
@@ -32,8 +35,8 @@ const loadVeritime = () => {
     WIN_MODE = WIN_MODES.VERITIME;
 }
 
-const loadPapercut = () => {
-    win = child.spawn("pc-release.exe", {
+const loadPapercut = async () => {
+    win = await child.spawn("pc-release.exe", {
         cwd: PAPERCUT_CWD,
     });
     WIN_MODE = WIN_MODES.PAPERCUT;
