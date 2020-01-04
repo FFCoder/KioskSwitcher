@@ -90,3 +90,7 @@ out/
 
 # Papercut Dir for Development
 PCRelease/
+
+# VSCode 
+.vscode/
+launch.json

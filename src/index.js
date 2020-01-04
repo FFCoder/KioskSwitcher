@@ -27,7 +27,7 @@ const createWindow = () => {
     webPreferences: {
       nodeIntegration: true
     },
-    frame: false
+    frame: false // To make it more difficult to be closed.
     
   });
 
@@ -73,10 +73,3 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and import them here.
-
-const testF = () => {
-  alert("Test Function Called");
-}
