@@ -1,2 +1,2 @@
 If Computer is Offline, Application gives no indiciation and can freeze on user input.
-PCRelease Client extremely slow to load.
+
