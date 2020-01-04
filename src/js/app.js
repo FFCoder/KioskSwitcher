@@ -27,15 +27,6 @@ const PAPERCUT_CWD = path.join(`\\\\papercut\\`, 'PCRelease')
 let win;
 var WIN_MODE = null;
 
-const showWaitingMessage = (windowTimeout) => {
-    var main_win = document.getElementById('main_win');
-    var warning_alert = document.createElement('div');
-    warning_alert.classList.add('alert');
-    warning_alert.classList.add('alert-info');
-    warning_alert.innerHTML = "A test alert";
-    main_win.appendChild(warning_alert);
-}
-
 const loadVeritime = () => {
     win = new BrowserWindow({
         fullscreen: true,
@@ -46,12 +37,11 @@ const loadVeritime = () => {
 }
 
 const loadPapercut = () => {
-    win = child.spawn("pc-release.exe", {
+    win = child.spawn("pc-release-local-cache.exe", {
         cwd: PAPERCUT_CWD,
         env: env
     });
     WIN_MODE = WIN_MODES.PAPERCUT;
-    showWaitingMessage(5);
     
 }
 

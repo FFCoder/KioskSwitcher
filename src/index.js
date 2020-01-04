@@ -3,7 +3,7 @@ const { app, BrowserWindow, globalShortcut, Menu } = require('electron');
 if (require('electron-squirrel-startup')) return app.quit();
 
 
-const DEBUG = true;
+const DEBUG = false;
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit();
@@ -26,7 +26,8 @@ const createWindow = () => {
     height: 768,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
+    frame: false
     
   });
 

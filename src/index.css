@@ -1,6 +1,23 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  
+}
+
+#GSCS_LOGO {
+  width: 40%;
+}
+.button-holder {
+  display: flex;
+  justify-content: space-around !important;
+}
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
+
+#main_win {
+  height: 100vh;
 }

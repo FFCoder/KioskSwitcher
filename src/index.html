@@ -4,72 +4,37 @@
     <meta charset="UTF-8">
     <title>Kiosk Switcher</title>
     <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   </head>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap&text=PleaseMakeASelection">
   <link rel="stylesheet" href="./css/bttn.min.css">
-  <style>
-    body {
-      
-      background: navy;
-      margin: 1 !important;
-    }
-    h2 {
-      font-family: 'Roboto', sans-serif;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      padding: 5%;
-      background: white;
-      margin: 1rem;
-      -webkit-box-shadow: 0px 10px 13px -7px #444444, 18px 5px 15px 5px rgba(213,213,213,0); 
-      box-shadow: 0px 10px 13px -7px #444444, 18px 5px 15px 5px rgba(213,213,213,0);
-    }
-    .row {
-      width: 70%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2%;
-    }
-    #GSCS_LOGO {
-      width: 20%;
-    }
-    .vt {
-      background: #6b3b78 !important;
-      color: white !important;
-    }
-    .pc {
-      background: oldlace !important;
-      color: black !important;
-    }
-    .btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2%;
-      margin: 1%;
-      height: 5rem;
-      width: 20%;
-    }
-  </style>
-  <body>
-    <div class="container" id="main_win">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/app.css">
+  <body class="black">
+    <div class="container white" id="main_win">
+      <div class="container-fluid">
       <div class="row">
+        <div class="col"></div>
         <img id="GSCS_LOGO" src="./img/GSCS_LOGO.jpg" alt="" srcset="">
+        <div class="col"></div>
       </div>
       <div class="row">
+        <div class="col"></div>
         <h2>Please Make A Selection</h2>
+        <div class="col"></div>
       </div>
-      <div class="row">
-        <div class="bttn-fill bttn-lg bttn-block btn vt" id="vtLaunch">Open Veritime</div>
-        <div class="bttn-fill bttn-lg bttn-block btn pc" id="papercutLaunch">Open Papercut</div>
+      <div class="row button-holder">
+        <div class="btn btn-primary btn-lg" id="vtLaunch">Open Veritime</div>
+        <div class="btn btn-info btn-lg" id="papercutLaunch">Open Papercut</div>
       </div>
+    </div>
     </div>
     
     <script src="./js/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>

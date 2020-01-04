@@ -24,7 +24,12 @@
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "switcher"
+            "name": "switcher",
+            "authors": "Jonathon Chambers",
+            "copyright": "Griffin-Spalding County Schools",
+            "description": "A Simple Kiosk App to Switch between Veritime and Papercut",
+            "setupExe": "SwitcherKiosk-Install",
+            "setupMsi": "SwitcherKiosk-InstallMSI"
           }
         },
         {
@@ -56,14 +61,6 @@
     "electron": "7.1.5"
   },
   "build": {
-    "extraResources": [
-      {
-        "from": "./PCRelease",
-        "to": "papercut",
-        "filter": [
-          "**/*"
-        ]
-      }
-    ]
+    
   }
 }
